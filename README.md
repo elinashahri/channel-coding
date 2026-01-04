@@ -48,19 +48,22 @@ Each simulation follows the standard OFDM transmit/receive chain:
   Simulation of **Reed–Solomon coded OFDM** BER vs. SNR.
 
 - `RS_decoder.m`  
-  Reed–Solomon decoding module (used in RS simulation).
-
-> You can rename files and organize them under a `notebooks/` or `src/` folder if desired.
+  Optional Reed–Solomon decoding module (MATLAB) used for RS-coded OFDM simulation.
 
 ---
 
-## Requirements
-### Python
-- Python 3.x
-- NumPy
-- Matplotlib
-- (Optional) SciPy
+## Tools & Libraries
+Python, NumPy, Matplotlib (and other common scientific libraries).  
+Some Reed–Solomon decoding components may use MATLAB (optional).
 
-Install common dependencies:
-```bash
-pip install numpy matplotlib scipy
+---
+
+## Notes
+- This repository is prepared as a reproducibility-oriented simulation study.
+- Exact BER values may vary depending on parameter choices (FFT size, CP length, modulation order, coding rate, number of bits), but the goal is to reproduce the overall performance trends reported in the reference paper.
+
+---
+
+## Author
+Elina Shahri  
+GitHub: https://github.com/elinashahri
